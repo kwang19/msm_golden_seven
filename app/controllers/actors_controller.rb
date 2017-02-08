@@ -31,7 +31,7 @@ class ActorsController < ApplicationController
     m.dob = params[:dob]
     m.save
 
-    redirect_to("http://localhost:3000/actors/"+ params[:id])
+    redirect_to("/actors/"+ params[:id])
   end
   def new_form
     render("/actors/new_actor.html.erb")
@@ -44,10 +44,10 @@ class ActorsController < ApplicationController
     m.dob = params[:dob]
     m.save
 
-    redirect_to("http://localhost:3000/actors")
+    redirect_to("/actors")
   end
   def delete_actor
     m = Actor.find(params[:id]).destroy
-    redirect_to("http://localhost:3000/actors")
+    redirect_to("/actors")
   end
 end

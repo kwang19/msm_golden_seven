@@ -31,7 +31,7 @@ class MoviesController < ApplicationController
     m.duration = params[:duration]
     m.description =  params[:description]
     m.save
-    redirect_to("http://localhost:3000/movies/"+ params[:id])
+    redirect_to("/movies/"+ params[:id])
 
   end
   def new_form
@@ -46,10 +46,10 @@ class MoviesController < ApplicationController
     m.description =  params[:description]
     m.save
 
-    redirect_to("http://localhost:3000/movies")
+    redirect_to("/movies")
   end
   def delete_movie
     m = Movie.find(params[:id]).destroy
-      redirect_to("http://localhost:3000/movies")
+      redirect_to("/movies")
   end
 end

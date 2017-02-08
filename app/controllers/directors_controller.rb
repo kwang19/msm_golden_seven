@@ -29,7 +29,7 @@ class DirectorsController < ApplicationController
     m.image_url=params[:image_url]
     m.dob = params[:dob]
     m.save
-    redirect_to("http://localhost:3000/directors/"+ params[:id])
+    redirect_to("/directors/"+ params[:id])
   end
   def new_form
     render("/directors/new_director.html.erb")
@@ -42,10 +42,10 @@ class DirectorsController < ApplicationController
     m.dob = params[:dob]
     m.save
 
-    redirect_to("http://localhost:3000/directors")
+    redirect_to("/directors")
   end
   def delete_director
     m = Director.find(params[:id]).destroy
-    redirect_to("http://localhost:3000/directors")
+    redirect_to("/directors")
   end
 end

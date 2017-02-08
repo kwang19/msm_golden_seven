@@ -1,5 +1,5 @@
-<h1>Edit a Director</h1>
-<form action="http://localhost:3000/update_director/<%=@id%>">
+<h1>Edit Director</h1>
+<form action="/update_director/<%=@id%>">
   <label for="name">Name</label>
   <input type="text" name="name" id="name" value="<%=@name%>"><br>
 
@@ -11,6 +11,6 @@
 <label for="dob">Date of Birth</label>
 <input type="text" name="dob" id="dob" value="<%=@dob%>"><br>
 
-<button>Update director</button>
+<button>Update Director</button>
 
 </form>
