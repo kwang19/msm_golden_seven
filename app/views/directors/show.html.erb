@@ -1,0 +1,10 @@
+<h1>Director Detail</h1>
+<form action="update">
+<p><%=@name%></p>
+  <img src=<%= @image_url %> alt=<%=@name%>>
+  <p><%=@bio%></p>
+  <p><%=@dob%></p>
+<a href="/directors">Back</a>
+<a href="/directors/<%=@id%>/edit">Edit</a>
+<a href="/delete_director/<%=@id%>">Delete</a>
+</form>

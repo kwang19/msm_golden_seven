@@ -1,0 +1,16 @@
+<h1>Update Actor</h1>
+<form action="http://localhost:3000/update_actor/<%=@id%>">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" value="<%=@name%>"><br>
+
+<label for="year">Bio</label>
+<input type="text" name="bio" id="bio" value="<%=@bio%>"><br>
+<label for="image_url">Photo</label>
+<input type="text" name="image_url" id="image_url" value="<%=@image_url%>"><br>
+
+<label for="dob">Date of Birth</label>
+<input type="text" name="dob" id="dob" value="<%=@dob%>"><br>
+
+
+<button>Update actor</button>
+</form>

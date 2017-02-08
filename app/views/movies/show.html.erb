@@ -1,0 +1,12 @@
+<h1>Movie Detail</h1>
+<form action="update">
+<p><%=@title%></p>
+  <img src=<%= @image_url %> alt=<%=@title%>>
+  <p><%=@year%></p>
+  <p><%=@duration%></p>
+  <p><%=@description%></p>
+
+<a href="/movies">Back</a>
+<a href="/movies/<%=@id%>/edit">Edit</a>
+<a href="/delete_movie/<%=@id%>">Delete</a>
+</form>
